@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "QR Chrome",
+  "name": "EaseQR",
   "version": "1.0",
-  "description": "A Chrome extension that generates QR codes for the current page.",
+  "description": "A Chrome extension that generates QR codes.",
   "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
   "background": {
     "service_worker": "background.js"
