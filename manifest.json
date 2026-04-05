@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "QR Chrome",
+  "version": "1.0",
+  "description": "A Chrome extension that generates QR codes for the current page.",
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html"
+  }
+}

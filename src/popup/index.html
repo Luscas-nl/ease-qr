@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body
+    class="bg-zinc-950 text-zinc-100 flex items-center justify-center"
+  >
+    <div
+      class="w-80 bg-zinc-900/80 backdrop-blur shadow-lg p-5 flex flex-col items-center gap-4 border border-zinc-800"
+    >
+      <h1 class="text-lg font-semibold tracking-tight">QR Code Generator</h1>
+
+      <div class="bg-white flex items-center justify-center p-3 rounded-xl shadow-inner">
+        <img class="w-40 h-40" id="qr" alt="QR Code" />
+      </div>
+
+      <p
+        id="text"
+        class="text-xs text-zinc-400 text-center wrap-break-word max-h-16 overflow-hidden "
+      >Selecione um texto para gerar o QR Code</p>
+
+
+      <div class="flex flex-col gap-2 w-full">
+        <button
+          id="download"
+          class="
+            w-full bg-purple-600 hover:bg-purple-500 active:scale-[0.98] transition-all duration-150 text-white py-2 rounded-lg font-medium cursor-pointer 
+          disabled:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 hover:active:scale-100
+          "
+        >
+          Download
+        </button>
+  
+        <button
+          id="clear"
+          class="
+            w-full bg-red-600 hover:bg-red-500 active:scale-[0.98] transition-all duration-150 text-white py-2 rounded-lg font-medium cursor-pointer 
+          disabled:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 hover:active:scale-100
+          "
+        >
+          Limpar
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
